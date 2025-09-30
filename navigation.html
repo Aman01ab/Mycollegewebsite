@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Box</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-box {
+      background: #fff;
+      width: 260px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .nav-box h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #222;
+      text-align: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .nav-links li {
+      margin: 12px 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #0056b3;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      transition: 0.3s;
+      padding: 6px 8px;
+      border-radius: 6px;
+    }
+
+    .nav-links a i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+      background: #ff6600;
+      transform: translateX(5px);
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin: 15px 0 8px 0;
+      color: #222;
+    }
+
+    .quick-contact, .latest-news {
+      font-size: 15px;
+      color: #0056b3;
+      display: flex;
+      align-items: center;
+      margin: 6px 0;
+    }
+
+    .quick-contact i, .latest-news i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 15px 0;
+    }
+
+    /* 📱 Responsive Styles */
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+      .nav-box {
+        width: 100%;
+        max-width: 500px;
+      }
+      .nav-links a {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      .nav-box {
+        width: 100%;
+        padding: 15px;
+      }
+      .nav-box h3 {
+        font-size: 18px;
+      }
+      .nav-links a {
+        font-size: 14px;
+      }
+      .quick-contact, .latest-news {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-box">
+    <h3>Navigation</h3>
+    <ul class="nav-links">
+      <li><a href="main.html" target="mainFrame"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="about.html" target="mainFrame"><i class="fa fa-info-circle"></i> About</a></li>
+      <li><a href="contact.html" target="mainFrame"><i class="fa fa-envelope"></i> Contact</a></li>
+      <li><a href="time.html" target="mainFrame"><i class="fa fa-calendar-alt"></i> Timetable</a></li>
+      <li><a href="forms.html" target="mainFrame"><i class="fa fa-wpforms"></i> Forms</a></li>
+    </ul>
+
+    <hr>
+    <div class="section-title">Quick Contact</div>
+    <div class="quick-contact"><i class="fa fa-phone"></i> +91 8789024369</

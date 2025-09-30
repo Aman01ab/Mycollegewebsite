@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: #336699;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      flex: 0 0 15%;
+    }
+
+    /* Main section (3 columns) */
+    .main {
+      display: flex;
+      flex: 1;
+      min-height: 0; /* keeps iframes contained */
+    }
+
+    .main iframe {
+      border: none;
+      height: 100%;
+    }
+
+    .nav {
+      flex: 0 0 20%;
+      background: #f4f4f4;
+    }
+
+    .content {
+      flex: 1;
+      background: #fff;
+    }
+
+    .remarks {
+      flex: 0 0 20%;
+      background: #f9f9f9;
+    }
+
+    /* 📱 Responsive Adjustments */
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+      }
+      .nav, .remarks {
+        flex: 0 0 auto;
+        height: 150px;
+      }
+      .content {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to RRSDCE Portal</h1>
+  </header>
+
+  <!-- Main 3-column layout -->
+  <div class="main">
+    <iframe src="navigation.html" class="nav" name="navigationframe"></iframe>
+    <iframe src="main.html" class="content" name="mainFrame"></iframe>
+    <iframe src="remarks.html" class="remarks" name="remarksFrame"></iframe>
+  </div>
+</body>
+</html>

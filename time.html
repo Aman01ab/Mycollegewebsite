@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Timetable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto; /* allows horizontal scroll on small screens */
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 600px; /* ensures table structure */
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #004080;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Responsive image */
+    .center-img {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .center-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Smaller screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      th, td {
+        font-size: 13px;
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+      th, td {
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Weekly College Timetable</h1>
+
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>9-10 AM</th>
+        <th>10-11 AM</th>
+        <th>11-12 PM</th>
+        <th>12-1 PM</th>
+        <th>2-3 PM</th>
+        <th>3-4 PM</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>Math</td>
+        <td>Physics</td>
+        <td>Chemistry</td>
+        <td>Break</td>
+        <td>Computer Science</td>
+        <td>Lab</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>English</td>
+        <td>Math</td>
+        <td>Physics</td>
+        <td>Break</td>
+        <td>Electronics</td>
+        <td>Workshop</td>
+      </tr>
+      <!-- Add more rows for other days -->
+    </table>
+  </div>
+
+  <div class="center-img">
+    <img src="https://cmjcollege.ac.in/wp-content/uploads/2023/12/cmj-college-revised-routine_page-0001-1024x722.jpg" alt="College Photo">
+  </div>
+</body>
+</html>

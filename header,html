@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RRSDCE BEGUSARAI Portal</title>
+  <!-- Internal CSS -->
+  <style>
+    body {
+      background-color: #336699;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    /* 📱 Responsive Adjustments */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to RRSDCE BEGUSARAI Portal</h1>
+</body>
+</html>

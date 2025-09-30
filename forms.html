@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 20px 25px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .form-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .form-inline label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    .form-group p {
+      margin: 8px 0;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .btn-group input {
+      flex: 1;
+      padding: 12px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-group input[type="submit"] {
+      background: #0056b3;
+      color: #fff;
+    }
+
+    .btn-group input[type="reset"] {
+      background: #ccc;
+      color: #000;
+    }
+
+    .btn-group input:hover {
+      opacity: 0.9;
+    }
+
+    /* 📱 Responsive Adjustments */
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>College Admission Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+          <option value="btech">B.Tech</option>
+          <option value="mtech">M.Tech</option>
+          <option value="phd">Ph.D</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Choose Gender:</p>
+        <div class="form-inline">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>Select Subjects:</p>
+        <div class="form-inline">
+          <label><input type="checkbox" name="subj" value="ai"> AI</label>
+          <label><input type="checkbox" name="subj" value="web"> Web Development</label>
+          <label><input type="checkbox" name="subj" value="ds"> Data Science</label>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
